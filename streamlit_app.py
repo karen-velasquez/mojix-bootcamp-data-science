@@ -1,5 +1,9 @@
+from app import app
 
-print("Hola Mundo")
+from flask import render_template
 
+@app.route("/")
+def index():
+    return render_template("streamlit.html")
 
 
